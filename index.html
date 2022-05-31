@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Despegarnos</h1>
+    </header>
+    <main class="cuerpo">
+        <section>
+            <article>
+                <div class="title-sec">
+                    <h2>Vuelos con reserva flexible</h2>
+                    <p>Encontrá pasajes aéreos con la posibilidad de cambiar las fechas de vuelo.</p>
+                </div>
+                <div class="formulario">
+                    <form action="">
+                        <div class="campo">
+                            <input type="radio" name="tipo-pasaje" id="iyv" class="tipo"><span>Ida y vuelta</span>
+                            <input type="radio" name="tipo-pasaje" id="ida" class="tipo"><span>Solo ida</span>
+                            <input type="radio" name="tipo-pasaje" id="multi" class="tipo"><span>Multidestino</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Origen</label>
+                            <div>
+                                <input list="origen">
+                                <datalist name="" id="origen">
+                                    <option value="Buenos aires">Buenos aires</option>
+                                    <option value="Chubut">Chubut</option>
+                                    <option value="Jujuy">Jujuy</option>
+                                    <option value="La rioja">La rioja</option>
+                                    <option value="Mendoza">Mendoza</option>
+                                    <option value="Misiones">Misiones</option>
+                                    <option value="Neuquen">Neuquen</option>
+                                    <option value="Salta">Salta</option>
+                                    <option value="Tucuman">Tucuman</option>
+                                    <option value="Tierra del fuego">Tierra del fuego</option>
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Destino</label>
+                            <div>
+                                <input list="destino">
+                                <datalist id="destino">
+                                    <option value="New York, Estados Unidos"></option>
+                                    <option value="Venecia, Italia"></option>
+                                    <option value="Londres, Reino Unido"></option>
+                                    <option value="Madrid, España"></option>
+                                    <option value="Rio de Janeiro, Brasil"></option>
+                                    <option value="Cancun, Mexico"></option>
+                                    <option value="Cataratas del Iguazu, Argentina"></option>
+                                    <option value="Entre rios, Argentina"></option>
+                                    <option value="Posadas, Argentina"></option>
+                                    <option value="Ushuaia, Argentina"></option>
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="fechas">Fechas</label>
+                            <div>
+                                <label for="ida">Ida:</label>
+                                <input type="date" name="ida" id="ida" placeholder="Ida">
+                                <label style="margin-left: 15px;" for="vuelta">Vuelta:</label>
+                                <input type="date" name="vuelta" id="vuelta" placeholder="Vuelta">
+                                <div>
+                                    <label for="decision" class="checkbox">Todavia no he decidido fecha</label>
+                                    <input type="checkbox" class="checkbox">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="campo">
+                            <label for="pasajeros">Pasajeros</label>
+                            <div>
+                                <input type="number" name="pasajeros" id="pasajeros">
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="clase">Clase</label>
+                            <div>
+                                <input list="clase">
+                                <datalist id="clase">
+                                    <option value="Tourist"></option>
+                                    <option value="Premium"></option>
+                                    <option value="Bussiness"></option>
+                                    <option value="First class"></option>
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <button class="btn">Buscar</button>
+
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>2022 | Mauricio Teruel &copy;</p>
+    </footer>
+</body>
+
+</html>
